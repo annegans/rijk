@@ -1,0 +1,14 @@
+.products
+  padding-top: 60px
+  padding-bottom: 60px
+  background-color: $background-primary-color
+
+  .product
+    @extend %product
+
+  @media screen and (max-width: $screen-xs-max)
+    padding-top: 15px
+    padding-bottom: 15px
+
+    h2
+      margin: 0 0 15px

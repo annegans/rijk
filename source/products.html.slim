@@ -1,0 +1,9 @@
+section.products
+  .container
+    h1
+      | Products
+
+    .row
+      - data.products.each do | product |
+        .product.col-sm-6.col-md-4
+          = partial "partials/products/product", locals: {product: product}

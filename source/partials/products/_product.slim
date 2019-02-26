@@ -1,0 +1,11 @@
+- product = product[1]
+
+.content
+  .image
+    = image_tag product.images[0]
+
+  h2 = product.title
+  p = product.description
+
+  .price
+    = "€" + product.price.to_s
